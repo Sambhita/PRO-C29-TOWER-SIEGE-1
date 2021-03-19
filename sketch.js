@@ -18,7 +18,10 @@ function setup() {
   createCanvas(900,400);
   ground = new Ground();
   stand1 = new Stand(380,300,270,10);
+  stand2 = new Stand(650,200,190,10);
  
+
+  //stand1
   //level one
   block1 = new Block(280,275,30,40);  
   block2 = new Block(310,275,30,40);
@@ -46,11 +49,27 @@ function setup() {
   //level five
   block21 = new Block(385,115,30,40);
 
+  //stand2
+  //level one
+  block22 = new Block(590,150,30,40)
+  block23 = new Block(620,150,30,40)
+  block24 = new Block(650,150,30,40)
+  block25 = new Block(680,150,30,40)
+  block26 = new Block(710,150,30,40)
+
+  //level two
+  block27 = new Block(620,110,30,40)
+  block28 = new Block(650,110,30,40)
+  block29 = new Block(680,110,30,40)
+
+  //level three
+  block30 = new Block(650,70,30,40)
+
   //ball  with slings
   ball = Bodies.circle(50,200,20);
   World.add(world,ball);
 
-  slingShot = new SlingShot(this.ball,{x:200,y:200});
+  slingShot = new SlingShot(this.ball,{x:150,y:200});
 
 }
 
@@ -62,6 +81,7 @@ function draw() {
   strokeWeight(2);
   stroke(15);
   stand1.display();
+  stand2.display();
   
   stroke(15);
   fill("#B76CFD")
@@ -94,6 +114,25 @@ function draw() {
  stroke(15)
  fill("blue")
   block21.display();
+  
+
+  stroke(15)
+ fill("#7df9ff")
+ block22.display();
+ block23.display();
+ block24.display();
+ block25.display();
+ block26.display();
+
+ stroke(15)
+ fill("#39FF14")
+ block27.display();
+ block28.display();
+ block29.display();
+
+ stroke(15)
+ fill("yellow")
+ block30.display();
 
   fill("white");
   textSize(30);
