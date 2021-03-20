@@ -15,39 +15,39 @@ function setup() {
   engine  = Engine.create();
   world = engine.world;
 
-  createCanvas(900,400);
+  createCanvas(900,500);
   ground = new Ground();
-  stand1 = new Stand(380,300,270,10);
-  stand2 = new Stand(650,200,190,10);
+  stand1 = new Stand(380,450,270,10);
+  stand2 = new Stand(650,250,190,10);
  
 
   //stand1
   //level one
-  block1 = new Block(280,275,30,40);  
-  block2 = new Block(310,275,30,40);
-  block3 = new Block(340,275,30,40);
-  block4 = new Block(370,275,30,40);
-  block5 = new Block(400,275,30,40);
-  block6 = new Block(430,275,30,40);
-  block7 = new Block(460,275,30,40);
-  block8 = new Block(490,275,30,40);
+  block1 = new Block(280,410,30,40);  
+  block2 = new Block(310,410,30,40);
+  block3 = new Block(340,410,30,40);
+  block4 = new Block(370,410,30,40);
+  block5 = new Block(400,410,30,40);
+  block6 = new Block(430,410,30,40);
+  block7 = new Block(460,410,30,40);
+  block8 = new Block(490,410,30,40);
   //level two
-  block9 = new Block(310,235,30,40);
-  block10 = new Block(340,235,30,40);
-  block11 = new Block(370,235,30,40);
-  block12 = new Block(400,235,30,40);
-  block13 = new Block(430,235,30,40);
-  block14 = new Block(460,235,30,40);
+  block9 = new Block(310,380,30,40);
+  block10 = new Block(340,380,30,40);
+  block11 = new Block(370,380,30,40);
+  block12 = new Block(400,380,30,40);
+  block13 = new Block(430,380,30,40);
+  block14 = new Block(460,380,30,40);
   //level three
-  block15 = new Block(340,195,30,40);
-  block16 = new Block(370,195,30,40);
-  block17 = new Block(400,195,30,40);
-  block18 = new Block(430,195,30,40);
+  block15 = new Block(340,340,30,40);
+  block16 = new Block(370,340,30,40);
+  block17 = new Block(400,340,30,40);
+  block18 = new Block(430,340,30,40);
   //level four
-  block19 = new Block(370,155,30,40);
-  block20 = new Block(400,155,30,40);
+  block19 = new Block(370,300,30,40);
+  block20 = new Block(400,300,30,40);
   //level five
-  block21 = new Block(385,115,30,40);
+  block21 = new Block(385,240,30,40);
 
   //stand2
   //level one
